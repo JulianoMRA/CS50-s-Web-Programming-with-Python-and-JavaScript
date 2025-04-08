@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head> 
-      <title>Hello!</title>
+      <title>Form</title>
   </head>
   <body>
-    Hello, world!
+    <form>
+      <div>
+        <input type="text" placeholder="Name" name="name">
+        <input type="password" name="password" placeholder="Password">
+        <input type="Submit">
+      </div>
+      <div>
+        <input name="country" list="countries" placeholder="Country">
+        <datalist id="countries">
+          <option value="Brasil">
+        </datalist>
+      </div>
+    </form>
   </body>
 </html>
