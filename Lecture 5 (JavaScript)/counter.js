@@ -1,13 +1,15 @@
-let counter = 0;
-
-function count() {
-    counter++;
-    heading = document.querySelector('h1');
-    heading.innerHTML = counter;
+if (!localStorage.getItem('counter')) {
+    localStorage.setItem('counter', 0);
 }
 
-document.addEventListener('DOMContentLoaded', function(){
-    document.querySelector('button').onclick = count;
+function count() {
+    let counter = localStorage.getItem('counter');
+    counter++;
+    document.querySelector('h1').innerHTML = counter;
+    localStorage.setItem('counter', counter);
+}
 
-    setInterval(count, 1000);
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('h1').innerHTML = localStorage.getItem('counter');
+    document.querySelector('button').onclick = count;
 });
