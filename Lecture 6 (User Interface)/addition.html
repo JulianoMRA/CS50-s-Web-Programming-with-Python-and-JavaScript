@@ -17,6 +17,11 @@
             .incorrect {
                 color: red;
             }
+
+            #winner {
+                font-size: 72px;
+                color: green;
+            }
         </style>
         <title>Addition</title>
     </head>
@@ -62,6 +67,14 @@
                         ...state,
                         response: event.target.value
                     });
+                }
+
+                if (state.score === 10) {
+                    return(
+                        <div id="winner">
+                            You Won!!!    
+                        </div>
+                    );
                 }
 
                 return(
