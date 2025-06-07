@@ -27,3 +27,6 @@ class Tests(unittest.TestCase):
     def test_28(self):
         """Check that 28 is not prime."""
         self.assertFalse(is_prime(28))
+
+if __name__ == "__main__":
+    unittest.main()
