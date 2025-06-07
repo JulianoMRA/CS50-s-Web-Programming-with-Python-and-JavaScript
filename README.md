@@ -52,7 +52,3 @@ This repo serves as:
 ## 📌 Course Link
 
 🔗 [CS50W: Web Programming with Python and JavaScript](https://cs50.harvard.edu/web/)
-
----
-
-**Made with ❤️ and curiosity by Juliano Melo**
